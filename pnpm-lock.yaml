@@ -33,6 +33,9 @@ importers:
       '@vitejs/plugin-react':
         specifier: ^5.1.1
         version: 5.1.4(vite@7.3.1(@types/node@24.10.13))
+      chromatic:
+        specifier: ^15.1.1
+        version: 15.1.1
       eslint:
         specifier: ^9.39.1
         version: 9.39.2
@@ -814,6 +817,18 @@ packages:
   check-error@2.1.3:
     resolution: {integrity: sha512-PAJdDJusoxnwm1VwW07VWwUN1sl7smmC3OKggvndJFadxxDRyFJBX/ggnu/KE4kQAB7a3Dp8f/YXC1FlUprWmA==}
     engines: {node: '>= 16'}
+
+  chromatic@15.1.1:
+    resolution: {integrity: sha512-T42eLy1fuckVIzZAoryYjxOEFXgOC9BUi+oT0VjmCz9PaJ/tvItTagIxIxA65vgrtCymXKSZDrGe7Hg2y7iAMA==}
+    hasBin: true
+    peerDependencies:
+      '@chromatic-com/cypress': ^0.*.* || ^1.0.0
+      '@chromatic-com/playwright': ^0.*.* || ^1.0.0
+    peerDependenciesMeta:
+      '@chromatic-com/cypress':
+        optional: true
+      '@chromatic-com/playwright':
+        optional: true
 
   color-convert@2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -2236,6 +2251,8 @@ snapshots:
       supports-color: 7.2.0
 
   check-error@2.1.3: {}
+
+  chromatic@15.1.1: {}
 
   color-convert@2.0.1:
     dependencies:
